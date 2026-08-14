@@ -1,0 +1,4532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Kisan Mithra - Smart Agriculture Platform for modern farmers">
+
+    <title>Kisan Mithra | Smart Agriculture</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+     🌿 FLOATING LEAVES
+===================================================== -->
+
+<div class="km-floating-leaves" aria-hidden="true">
+
+    <span class="km-leaf">🍃</span>
+    <span class="km-leaf">🌿</span>
+    <span class="km-leaf">🍃</span>
+    <span class="km-leaf">🌱</span>
+    <span class="km-leaf">🍃</span>
+    <span class="km-leaf">🌿</span>
+
+</div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+    <div class="logo">
+        🌾 Kisan <span>Mithra</span>
+    </div>
+
+    <nav class="navbar">
+
+        <a href="#home">Home</a>
+
+        <a href="#features">Features</a>
+
+        <a href="#dashboard"> Dashboard</a>
+
+        
+        <div class="language-selector">
+
+    <button
+    type="button"
+    class="language-btn"
+    id="languageBtn"
+    onclick="toggleLanguageMenu(event)"
+>
+    Language ▾
+</button>
+    <div
+        class="language-menu"
+        id="languageMenu"
+    >
+
+        <button
+            type="button"
+            onclick="changeLanguage('en')"
+        >
+            🇬🇧 English
+        </button>
+
+        <button
+            type="button"
+            onclick="changeLanguage('te')"
+        >
+            🇮🇳 తెలుగు
+        </button>
+
+        <button
+            type="button"
+            onclick="changeLanguage('hi')"
+        >
+            🇮🇳 हिंदी
+        </button>
+
+        <button
+            type="button"
+            onclick="changeLanguage('kn')"
+        >
+            🇮🇳 ಕನ್ನಡ
+        </button>
+
+        <button
+            type="button"
+            onclick="changeLanguage('ta')"
+        >
+            🇮🇳 தமிழ்
+        </button>
+
+    </div>
+
+</div>
+
+        <a href="#about">About</a>
+
+    </nav>
+
+    <div class="header-buttons">
+
+        <button class="farmer-btn" id="farmerLoginBtn">
+            🟠 Farmer Login
+        </button>
+
+        <button class="register-btn" id="registerBtn">
+            🟢 Register
+        </button>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+    <!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            🌱 SMART AGRICULTURE PLATFORM
+        </p>
+
+        <h1>
+            Smart Farming for a
+            <span>Better Tomorrow</span>
+        </h1>
+
+        <p>
+            Empowering farmers with weather insights,
+            soil intelligence, crop recommendations and
+            modern farming technology.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button
+                class="primary-btn"
+                onclick="document.getElementById('features').scrollIntoView({ behavior: 'smooth' })">
+                🌾 Explore Farming
+            </button>
+
+            <button
+                class="secondary-btn"
+                onclick="document.getElementById('chatbotButton').click()">
+                🤖 Ask Farming Assistant
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- HERO VISUAL -->
+
+    <div class="hero-visual">
+
+        
+
+        <!-- Floating Farm Health -->
+
+        <div class="hero-floating-card health-card">
+
+            <span class="floating-icon">
+                🌱
+            </span>
+
+            <div>
+                <small>Farm Condition</small>
+
+                <strong>
+                    92%
+                </strong>
+
+                <span class="good-status">
+                    ● Excellent
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- Floating Weather -->
+
+        <div class="hero-floating-card weather-card">
+
+            <span class="floating-icon">
+                🌤️
+            </span>
+
+            <div>
+
+                <small>Today's Weather</small>
+
+                <strong>
+                    29°C
+                </strong>
+
+                <span>
+                    Good farming conditions
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Floating Crop -->
+
+        <div class="hero-floating-card crop-card">
+
+            <span class="floating-icon">
+                🌾
+            </span>
+
+            <div>
+
+                <small>Smart Recommendation</small>
+
+                <strong>
+                    Suitable Crops
+                </strong>
+
+                <span>
+                    Based on soil & climate
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features" id="features">
+
+        <div class="section-title">
+
+            <p>OUR TECHNOLOGY</p>
+
+            <h2>
+                Everything a Farmer Needs
+            </h2>
+
+            <span>
+                Smart tools designed to make farming easier.
+            </span>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌦️
+                </div>
+
+                <h3>
+                    Live Weather
+                </h3>
+
+                <p>
+                    Monitor current weather conditions
+                    for better farming decisions.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌱
+                </div>
+
+                <h3>
+                    Soil Intelligence
+                </h3>
+
+                <p>
+                    Compare previous and current
+                    soil reports.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌾
+                </div>
+
+                <h3>
+                    Crop Recommendation
+                </h3>
+
+                <p>
+                    Find suitable crops based on
+                    soil, season and water.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    Farming Assistant
+                </h3>
+
+                <p>
+                    Ask farming questions and
+                    receive helpful answers.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================================
+     KISAN MITHRA FARMER DASHBOARD
+========================================== -->
+
+<section class="km-dashboard" id="dashboard">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="km-sidebar">
+
+        <!-- BRAND -->
+
+        <div class="km-sidebar-brand">
+
+            <div class="km-brand-icon">
+                🌾
+            </div>
+
+            <div>
+                <h2>Kisan Mithra</h2>
+                <small>Smart Farming</small>
+            </div>
+
+        </div>
+
+
+        <!-- OVERVIEW -->
+
+        <div class="km-menu-label">
+            OVERVIEW
+        </div>
+
+
+        <a
+            href="#dashboard"
+            class="km-menu-item active"
+        >
+
+            <span class="km-menu-icon">🏠</span>
+
+            <div>
+                <strong>Dashboard</strong>
+                <small>Farm overview</small>
+            </div>
+
+        </a>
+
+
+        <!-- FARM INTELLIGENCE -->
+
+        <div class="km-menu-label">
+            FARM INTELLIGENCE
+        </div>
+
+
+        <a href="#weather" class="km-menu-item">
+
+            <span class="km-menu-icon">🌦️</span>
+
+            <div>
+                <strong>Weather</strong>
+                <small>Weather conditions</small>
+            </div>
+
+        </a>
+
+
+        <a href="#soil" class="km-menu-item">
+
+            <span class="km-menu-icon">🌱</span>
+
+            <div>
+                <strong>Soil Intelligence</strong>
+                <small>Soil health & reports</small>
+            </div>
+
+        </a>
+
+
+        <a href="#recommendation" class="km-menu-item">
+
+            <span class="km-menu-icon">🌾</span>
+
+            <div>
+                <strong>Crop Recommendation</strong>
+                <small>Suitable crops</small>
+            </div>
+
+        </a>
+
+
+        <a href="#fertilizerAdvisor" class="km-menu-item">
+
+            <span class="km-menu-icon">🧪</span>
+
+            <div>
+                <strong>Fertilizer Advisor</strong>
+                <small>Nutrient guidance</small>
+            </div>
+
+        </a>
+
+
+        <a href="#plantDoctor" class="km-menu-item">
+
+            <span class="km-menu-icon">🩺</span>
+
+            <div>
+                <strong>Plant Doctor</strong>
+                <small>Plant health</small>
+            </div>
+
+        </a>
+
+
+        <a href="#pests" class="km-menu-item">
+
+            <span class="km-menu-icon">🐛</span>
+
+            <div>
+                <strong>Pest Monitoring</strong>
+                <small>Pest & disease tracking</small>
+            </div>
+
+        </a>
+
+
+        <a href="#records" class="km-menu-item">
+
+            <span class="km-menu-icon">📒</span>
+
+            <div>
+                <strong>Farm Records</strong>
+                <small>Farm activities</small>
+            </div>
+
+        </a>
+
+
+        <a href="#cropLifecycle" class="km-menu-item">
+
+            <span class="km-menu-icon">🌱</span>
+
+            <div>
+                <strong>Crop Lifecycle</strong>
+                <small>Growth stages</small>
+            </div>
+
+        </a>
+
+
+        <!-- FARM TOOLS -->
+
+        <div class="km-menu-label">
+            FARM TOOLS
+        </div>
+
+
+        <a href="#profitCalculator" class="km-menu-item">
+
+            <span class="km-menu-icon">💰</span>
+
+            <div>
+                <strong>Profit Calculator</strong>
+                <small>Estimate profit</small>
+            </div>
+
+        </a>
+
+
+        <a href="#market" class="km-menu-item">
+
+            <span class="km-menu-icon">📈</span>
+
+            <div>
+                <strong>Market Intelligence</strong>
+                <small>Market information</small>
+            </div>
+
+        </a>
+
+
+        <a href="#iot" class="km-menu-item">
+
+            <span class="km-menu-icon">📡</span>
+
+            <div>
+                <strong>IoT Monitoring</strong>
+                <small>Smart sensors</small>
+            </div>
+
+        </a>
+
+
+        <a href="#farm-health" class="km-menu-item">
+
+            <span class="km-menu-icon">🌍</span>
+
+            <div>
+                <strong>Farm Health</strong>
+                <small>Farm status</small>
+            </div>
+
+        </a>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="km-sidebar-bottom">
+
+            <div class="km-farmer-avatar">
+                👨‍🌾
+            </div>
+
+            <div>
+                <strong>Farmer</strong>
+                <small>Kisan Mithra</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN DASHBOARD ================= -->
+
+    <main class="km-dashboard-main">
+
+
+        <!-- TOP -->
+
+        <div class="km-dashboard-header">
+
+            <div>
+
+                <p class="km-dashboard-eyebrow">
+                    SMART FARM MANAGEMENT
+                </p>
+
+                <h1>
+                    Farmer Dashboard 🌾
+                </h1>
+
+                <p>
+                    Everything you need to manage
+                    your farm in one place.
+                </p>
+
+            </div>
+
+
+            <div class="km-dashboard-date">
+
+                <span>📅</span>
+
+                <div>
+
+                    <small>
+                        FARM STATUS
+                    </small>
+
+                    <strong>
+                        Active & Monitoring
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WELCOME CARD -->
+
+        <div class="km-welcome">
+
+            <div>
+
+                <span>
+                    GOOD DAY, FARMER 🌱
+                </span>
+
+                <h2>
+                    Welcome to your smart farm.
+                </h2>
+
+                <p>
+                    Monitor your soil, crops, weather,
+                    pests and farm performance from
+                    one simple dashboard.
+                </p>
+
+            </div>
+
+
+            <div class="km-health-score">
+
+                <small>
+                    FARM HEALTH
+                </small>
+
+                <div>
+
+                    <strong>
+                        85
+                    </strong>
+
+                    <span>
+                        /100
+                    </span>
+
+                </div>
+
+                <p>
+                    🌿 Good condition
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACCESS -->
+
+        <div class="km-section-heading">
+
+            <div>
+
+                <h2>
+                    Quick Access
+                </h2>
+
+                <p>
+                    Your most important farming tools
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="km-quick-grid">
+
+
+            <a href="#weather" class="km-quick-card">
+
+                <span>🌦️</span>
+
+                <div>
+
+                    <small>WEATHER</small>
+
+                    <h3>
+                        Weather
+                    </h3>
+
+                    <p>
+                        Check current conditions
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="#soil" class="km-quick-card">
+
+                <span>🌱</span>
+
+                <div>
+
+                    <small>SOIL</small>
+
+                    <h3>
+                        Soil Health
+                    </h3>
+
+                    <p>
+                        Analyze your soil
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="#recommendation" class="km-quick-card">
+
+                <span>🌾</span>
+
+                <div>
+
+                    <small>CROP</small>
+
+                    <h3>
+                        Crop Recommendation
+                    </h3>
+
+                    <p>
+                        Find suitable crops
+                    </p>
+
+                </div>
+
+            </a>
+
+
+            <a href="#profitCalculator" class="km-quick-card">
+
+                <span>💰</span>
+
+                <div>
+
+                    <small>FINANCE</small>
+
+                    <h3>
+                        Profit Calculator
+                    </h3>
+
+                    <p>
+                        Estimate your profit
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- SMART TOOLS -->
+
+        <div class="km-dashboard-panel">
+
+            <div class="km-panel-heading">
+
+                <span>🤖</span>
+
+                <div>
+
+                    <h2>
+                        Smart Farming Tools
+                    </h2>
+
+                    <p>
+                        Powerful tools built for farmers
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="km-tool-grid">
+
+
+                <a href="#plantDoctor">
+
+                    <span>🩺</span>
+
+                    <strong>
+                        Plant Doctor
+                    </strong>
+
+                    <small>
+                        Detect plant health problems
+                    </small>
+
+                </a>
+
+
+                <a href="#fertilizerAdvisor">
+
+                    <span>🧪</span>
+
+                    <strong>
+                        Fertilizer Advisor
+                    </strong>
+
+                    <small>
+                        Get nutrient guidance
+                    </small>
+
+                </a>
+
+
+                <a href="#pests">
+
+                    <span>🐛</span>
+
+                    <strong>
+                        Pest Monitoring
+                    </strong>
+
+                    <small>
+                        Monitor pest observations
+                    </small>
+
+                </a>
+
+
+                <a href="#cropLifecycle">
+
+                    <span>🌱</span>
+
+                    <strong>
+                        Crop Lifecycle
+                    </strong>
+
+                    <small>
+                        Track crop growth
+                    </small>
+
+                </a>
+
+
+                <a href="#market">
+
+                    <span>📈</span>
+
+                    <strong>
+                        Market Intelligence
+                    </strong>
+
+                    <small>
+                        Explore market information
+                    </small>
+
+                </a>
+
+
+                <a href="#farm-health">
+
+                    <span>🌍</span>
+
+                    <strong>
+                        Farm Health Monitor
+                    </strong>
+
+                    <small>
+                        Monitor overall farm status
+                    </small>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FARM HEALTH -->
+
+        <div class="km-dashboard-panel">
+
+            <div class="km-panel-heading">
+
+                <span>🌍</span>
+
+                <div>
+
+                    <h2>
+                        Farm Health Monitor
+                    </h2>
+
+                    <p>
+                        Select a status to understand your farm
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="km-health-status-grid">
+
+
+                <button
+                    type="button"
+                    onclick="showFarmHealth('soil')"
+                >
+
+                    <span class="km-status-dot soil-dot"></span>
+
+                    <strong>
+                        Soil
+                    </strong>
+
+                    <small>
+                        Soil status
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="showFarmHealth('water')"
+                >
+
+                    <span class="km-status-dot water-dot"></span>
+
+                    <strong>
+                        Water
+                    </strong>
+
+                    <small>
+                        Water status
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="showFarmHealth('irrigation')"
+                >
+
+                    <span class="km-status-dot irrigation-dot"></span>
+
+                    <strong>
+                        Irrigation
+                    </strong>
+
+                    <small>
+                        Water availability
+                    </small>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="showFarmHealth('sunlight')"
+                >
+
+                    <span class="km-status-dot sunlight-dot"></span>
+
+                    <strong>
+                        Sunlight
+                    </strong>
+
+                    <small>
+                        Sunlight availability
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="km-health-info"
+                id="dashboardHealthInfo"
+            >
+
+                🌱
+
+                <div>
+
+                    <h3>
+                        Farm Health Status
+                    </h3>
+
+                    <p>
+                        Click one of the indicators above
+                        to view its status.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</section>
+
+    <!-- ================= WEATHER ================= -->
+
+
+<section class="weather-section" id="weather">
+
+    <div class="section-title">
+
+        <p>LIVE FARMING INFORMATION</p>
+
+        <h2>🌦️ Live Weather Dashboard</h2>
+
+        <span>
+            Check current weather conditions for better
+            farming decisions.
+        </span>
+
+    </div>
+
+
+    <div class="weather-dashboard">
+
+        <div class="weather-search">
+
+    <input
+        type="text"
+        id="weatherCity"
+        placeholder="Enter city or village name"
+    >
+
+    <button onclick="getWeather()">
+        🔍 Search
+    </button>
+
+</div>
+
+<p
+    id="weatherDateTime"
+    class="weather-date-time">
+</p>
+
+        <div class="weather-top">
+
+            <div>
+
+                <p class="weather-location-label">
+                    CURRENT LOCATION
+                </p>
+
+                <h3 id="weatherLocation">
+                    Loading location...
+                </h3>
+
+            </div>
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+        </div>
+
+
+        <div class="weather-main">
+
+            <div class="temperature">
+
+                <span id="temperature">
+                    --°
+                </span>
+
+                <p id="weatherCondition">
+                    Loading weather...
+                </p>
+
+            </div>
+
+
+            <div class="weather-details">
+
+                <div class="weather-item">
+
+                    <span>💧</span>
+
+                    <div>
+                        <small>Humidity</small>
+
+                        <strong id="humidity">
+                            --%
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="weather-item">
+
+                    <span>💨</span>
+
+                    <div>
+                        <small>Wind Speed</small>
+
+                        <strong id="windSpeed">
+                            -- km/h
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="weather-item">
+
+                    <span>🌧️</span>
+
+                    <div>
+                        <small>Rain</small>
+
+                        <strong id="rainChance">
+                            --
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="weather-item">
+
+                    <span>🌡️</span>
+
+                    <div>
+                        <small>Feels Like</small>
+
+                        <strong id="feelsLike">
+                            --°
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="weather-message" id="weatherMessage">
+
+            🌱 Weather information can help you
+            plan irrigation and crop activities.
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SOIL COMPARISON ================= -->
+
+<section class="soil-section" id="soil">
+
+    <div class="section-title">
+
+        <p>SMART SOIL ANALYSIS</p>
+
+        <h2>🌱 Soil Report Comparison</h2>
+
+        <span>
+            Compare your previous and current soil reports
+            to understand changes in soil health.
+        </span>
+
+    </div>
+
+
+    <div class="soil-container">
+
+        <!-- PREVIOUS REPORT -->
+
+        <div class="soil-card">
+
+            <div class="soil-card-header">
+
+                <span>📄</span>
+
+                <div>
+                    <h3>Previous Report</h3>
+
+                    <small>
+                        Enter older soil values
+                    </small>
+                </div>
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Soil pH
+                </label>
+
+                <input
+                    type="number"
+                    id="previousPH"
+                    step="0.1"
+                    placeholder="Example: 6.2"
+                >
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Nitrogen (N)
+                </label>
+
+                <input
+                    type="number"
+                    id="previousN"
+                    placeholder="Example: 42"
+                >
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Phosphorus (P)
+                </label>
+
+                <input
+                    type="number"
+                    id="previousP"
+                    placeholder="Example: 31"
+                >
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Potassium (K)
+                </label>
+
+                <input
+                    type="number"
+                    id="previousK"
+                    placeholder="Example: 38"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- CURRENT REPORT -->
+
+        <div class="soil-card current-soil">
+
+            <div class="soil-card-header">
+
+                <span>🌱</span>
+
+                <div>
+                    <h3>Current Report</h3>
+
+                    <small>
+                        Enter latest soil values
+                    </small>
+                </div>
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Soil pH
+                </label>
+
+                <input
+                    type="number"
+                    id="currentPH"
+                    step="0.1"
+                    placeholder="Example: 6.7"
+                >
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Nitrogen (N)
+                </label>
+
+                <input
+                    type="number"
+                    id="currentN"
+                    placeholder="Example: 51"
+                >
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Phosphorus (P)
+                </label>
+
+                <input
+                    type="number"
+                    id="currentP"
+                    placeholder="Example: 35"
+                >
+
+            </div>
+
+
+            <div class="soil-input">
+
+                <label>
+                    Potassium (K)
+                </label>
+
+                <input
+                    type="number"
+                    id="currentK"
+                    placeholder="Example: 42"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMPARE BUTTON -->
+
+    <div class="soil-compare-button">
+
+        <button
+            id="compareSoilBtn"
+            onclick="compareSoil()"
+        >
+
+            🔍 Compare Soil Reports
+
+        </button>
+
+    </div>
+
+
+    <!-- RESULT -->
+
+    <div
+        class="soil-result"
+        id="soilResult"
+    >
+
+        <div class="soil-result-icon">
+            🌱
+        </div>
+
+        <h3>
+            Soil Health Result
+        </h3>
+
+        <div
+            class="health-status"
+            id="healthStatus"
+        >
+            Enter your reports and compare
+        </div>
+
+
+        <div
+            class="soil-comparison-grid"
+            id="soilComparisonGrid"
+        >
+
+        </div>
+
+
+        <div
+            class="soil-advice"
+            id="soilAdvice"
+        >
+
+            Your soil analysis will appear here.
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= CROP  ================= -->
+
+<section class="crop-section" id="recommendation">
+
+    <section id="crops">
+
+    <div class="section-title">
+
+        <p>SMART FARMING GUIDANCE</p>
+
+        <h2>🌾 Crop Recommendation</h2>
+
+        <span>
+            Get suitable crop suggestions based on
+            soil conditions and farming requirements.
+        </span>
+
+    </div>
+
+
+    <div class="crop-form">
+
+        <div class="crop-input-group">
+
+            <label for="cropPH">
+                🌱 Soil pH
+            </label>
+
+            <input
+                type="number"
+                id="cropPH"
+                step="0.1"
+                placeholder="Example: 6.5"
+            >
+
+        </div>
+
+
+        <div class="crop-input-group">
+
+            <label for="cropN">
+                🧪 Nitrogen (N)
+            </label>
+
+            <input
+                type="number"
+                id="cropN"
+                placeholder="Example: 50"
+            >
+
+        </div>
+
+
+        <div class="crop-input-group">
+
+            <label for="cropP">
+                🧪 Phosphorus (P)
+            </label>
+
+            <input
+                type="number"
+                id="cropP"
+                placeholder="Example: 35"
+            >
+
+        </div>
+
+
+        <div class="crop-input-group">
+
+            <label for="cropK">
+                🧪 Potassium (K)
+            </label>
+
+            <input
+                type="number"
+                id="cropK"
+                placeholder="Example: 40"
+            >
+
+        </div>
+
+
+        <div class="crop-input-group">
+
+            <label for="cropSeason">
+                📅 Season
+            </label>
+
+            <select id="cropSeason">
+
+                <option value="">
+                    Select Season
+                </option>
+
+                <option value="kharif">
+                    Kharif
+                </option>
+
+                <option value="rabi">
+                    Rabi
+                </option>
+
+                <option value="zaid">
+                    Zaid
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="crop-input-group">
+
+            <label for="cropWater">
+                💧 Water Availability
+            </label>
+
+            <select id="cropWater">
+
+                <option value="">
+                    Select Availability
+                </option>
+
+                <option value="low">
+                    Low
+                </option>
+
+                <option value="medium">
+                    Medium
+                </option>
+
+                <option value="high">
+                    High
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div class="crop-button">
+
+        <button onclick="recommendCrops()">
+
+            🌾 Find Suitable Crops
+
+        </button>
+
+    </div>
+
+
+    <div
+        class="crop-results"
+        id="cropResults"
+    >
+
+        <div class="crop-placeholder">
+
+            🌱
+
+            <h3>
+                Your crop recommendations
+                will appear here
+            </h3>
+
+            <p>
+                Enter your soil and farming
+                information above.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section" id="fertilizerAdvisor">
+
+    <div class="section-title">
+
+        <p>SMART NUTRIENT MANAGEMENT</p>
+
+        <h2>🧪 Fertilizer Advisor</h2>
+
+        <span>
+            Understand your soil nutrient status and get
+            crop-specific fertilizer guidance.
+        </span>
+
+    </div>
+
+
+    <div class="fertilizer-container">
+
+        <!-- INPUT CARD -->
+
+        <div class="fertilizer-input-card">
+
+            <div class="fertilizer-heading">
+
+                <span>🌱</span>
+
+                <div>
+                    <h3>Soil & Crop Information</h3>
+
+                    <p>
+                        Enter values from your latest soil report.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="fertilizer-form-grid">
+
+                <!-- CROP -->
+
+                <div class="record-input">
+
+                    <label for="fertilizerCrop">
+                        🌾 Crop
+                    </label>
+
+                    <select id="fertilizerCrop">
+
+                        <option value="">
+                            Select Crop
+                        </option>
+
+                        <option value="rice">
+                            Rice
+                        </option>
+
+                        <option value="wheat">
+                            Wheat
+                        </option>
+
+                        <option value="maize">
+                            Maize
+                        </option>
+
+                        <option value="cotton">
+                            Cotton
+                        </option>
+
+                        <option value="groundnut">
+                            Groundnut
+                        </option>
+
+                        <option value="millets">
+                            Millets
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- GROWTH STAGE -->
+
+                <div class="record-input">
+
+                    <label for="fertilizerStage">
+                        🌿 Growth Stage
+                    </label>
+
+                    <select id="fertilizerStage">
+
+                        <option value="">
+                            Select Stage
+                        </option>
+
+                        <option value="seed">
+                            Seed / Sowing
+                        </option>
+
+                        <option value="vegetative">
+                            Vegetative Growth
+                        </option>
+
+                        <option value="flowering">
+                            Flowering
+                        </option>
+
+                        <option value="fruiting">
+                            Fruiting / Grain Filling
+                        </option>
+
+                        <option value="harvest">
+                            Pre-Harvest
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PH -->
+
+                <div class="record-input">
+
+                    <label for="fertilizerPH">
+                        🌱 Soil pH
+                    </label>
+
+                    <input
+                        type="number"
+                        id="fertilizerPH"
+                        step="0.1"
+                        placeholder="Example: 6.5"
+                    >
+
+                </div>
+
+
+                <!-- N -->
+
+                <div class="record-input">
+
+                    <label for="fertilizerN">
+                        🧪 Nitrogen (N)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="fertilizerN"
+                        placeholder="Example: 45"
+                    >
+
+                </div>
+
+
+                <!-- P -->
+
+                <div class="record-input">
+
+                    <label for="fertilizerP">
+                        🧪 Phosphorus (P)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="fertilizerP"
+                        placeholder="Example: 30"
+                    >
+
+                </div>
+
+
+                <!-- K -->
+
+                <div class="record-input">
+
+                    <label for="fertilizerK">
+                        🧪 Potassium (K)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="fertilizerK"
+                        placeholder="Example: 40"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="save-record-btn fertilizer-btn"
+                onclick="analyzeFertilizer()"
+            >
+
+                🧪 Analyze Soil Nutrients
+
+            </button>
+
+        </div>
+
+
+        <!-- RESULT CARD -->
+
+        <div
+            class="fertilizer-result-card"
+            id="fertilizerResult"
+        >
+
+            <div class="fertilizer-result-empty">
+
+                🧪
+
+                <h3>
+                    Your fertilizer guidance
+                    will appear here
+                </h3>
+
+                <p>
+                    Enter your crop and soil information
+                    to begin the analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PLANT DOCTOR
+========================================== -->
+
+<section class="section" id="plantDoctor">
+
+    <div class="section-title">
+
+        <p>CROP HEALTH ASSISTANT</p>
+
+        <h2>🌿 Plant Doctor</h2>
+
+        <span>
+            Describe what you observe on your plant
+            and get possible causes and next steps.
+        </span>
+
+    </div>
+
+
+    <div class="plant-doctor-container">
+
+        <!-- INPUT CARD -->
+
+        <div class="plant-doctor-card">
+
+            <div class="plant-doctor-heading">
+
+                <span>🔎</span>
+
+                <div>
+
+                    <h3>Plant Observation</h3>
+
+                    <p>
+                        Select the crop and symptoms you can see.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="plant-doctor-form">
+
+                <!-- CROP -->
+
+                <div class="record-input">
+
+                    <label for="doctorCrop">
+                        🌾 Crop
+                    </label>
+
+                    <select id="doctorCrop">
+
+                        <option value="">
+                            Select Crop
+                        </option>
+
+                        <option value="rice">
+                            Rice
+                        </option>
+
+                        <option value="wheat">
+                            Wheat
+                        </option>
+
+                        <option value="maize">
+                            Maize
+                        </option>
+
+                        <option value="cotton">
+                            Cotton
+                        </option>
+
+                        <option value="groundnut">
+                            Groundnut
+                        </option>
+
+                        <option value="tomato">
+                            Tomato
+                        </option>
+
+                        <option value="vegetables">
+                            Other Vegetable
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SYMPTOM -->
+
+                <div class="record-input">
+
+                    <label for="doctorSymptom">
+                        🌿 Main Symptom
+                    </label>
+
+                    <select id="doctorSymptom">
+
+                        <option value="">
+                            Select Symptom
+                        </option>
+
+                        <option value="yellow">
+                            🍂 Yellow leaves
+                        </option>
+
+                        <option value="spots">
+                            🟤 Brown / dark spots
+                        </option>
+
+                        <option value="wilting">
+                            🥀 Wilting / drooping
+                        </option>
+
+                        <option value="holes">
+                            🐛 Holes or eaten leaves
+                        </option>
+
+                        <option value="curling">
+                            🍃 Curled leaves
+                        </option>
+
+                        <option value="white">
+                            ⚪ White powder / coating
+                        </option>
+
+                        <option value="stunted">
+                            📉 Poor or slow growth
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="record-input">
+
+                    <label for="doctorLocation">
+                        📍 Where is the problem?
+                    </label>
+
+                    <select id="doctorLocation">
+
+                        <option value="">
+                            Select Plant Part
+                        </option>
+
+                        <option value="leaves">
+                            Leaves
+                        </option>
+
+                        <option value="stem">
+                            Stem
+                        </option>
+
+                        <option value="roots">
+                            Roots
+                        </option>
+
+                        <option value="fruit">
+                            Fruit / Grain
+                        </option>
+
+                        <option value="whole">
+                            Whole Plant
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SEVERITY -->
+
+                <div class="record-input">
+
+                    <label for="doctorSeverity">
+                        ⚠️ Severity
+                    </label>
+
+                    <select id="doctorSeverity">
+
+                        <option value="">
+                            Select Severity
+                        </option>
+
+                        <option value="low">
+                            Low
+                        </option>
+
+                        <option value="medium">
+                            Medium
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- NOTES -->
+
+                <div class="record-input plant-notes">
+
+                    <label for="doctorNotes">
+                        📝 Additional Observation
+                    </label>
+
+                    <textarea
+                        id="doctorNotes"
+                        rows="4"
+                        placeholder="Example: Leaves started turning yellow after heavy rainfall..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="save-record-btn plant-doctor-btn"
+                onclick="diagnosePlant()"
+            >
+
+                🔬 Analyze Plant
+
+            </button>
+
+        </div>
+
+
+        <!-- RESULT CARD -->
+
+        <div
+            class="plant-diagnosis-card"
+            id="plantDiagnosis"
+        >
+
+            <div class="plant-diagnosis-empty">
+
+                🌿
+
+                <h3>
+                    Plant diagnosis will appear here
+                </h3>
+
+                <p>
+                    Select the crop and describe the
+                    symptoms you observe.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FARM RECORDS ================= -->
+
+<section class="farm-records-section" id="records">
+
+    <div class="section-title">
+
+        <p>FARM MANAGEMENT</p>
+
+        <h2>📋 Farm Records</h2>
+
+        <span>
+            Keep track of your crops, farming activities,
+            and important field information.
+        </span>
+
+    </div>
+
+
+    <div class="records-container">
+
+        <!-- ADD RECORD -->
+
+        <div class="record-form-card">
+
+            <div class="record-heading">
+
+                <span>🌱</span>
+
+                <div>
+
+                    <h3>Add Farm Record</h3>
+
+                    <p>
+                        Enter your farm information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="farmRecordForm">
+
+                <div class="record-input">
+
+                    <label>
+                        Crop Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="recordCrop"
+                        placeholder="Example: Rice"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Farm Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="recordLocation"
+                        placeholder="Example: Chennai"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="record-row">
+
+                    <div class="record-input">
+
+                        <label>
+                            Land Area
+                        </label>
+
+                        <input
+                            type="number"
+                            id="recordArea"
+                            placeholder="Example: 2"
+                            step="0.1"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="record-input">
+
+                        <label>
+                            Unit
+                        </label>
+
+                        <select id="recordUnit">
+
+                            <option value="acres">
+                                Acres
+                            </option>
+
+                            <option value="hectares">
+                                Hectares
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Sowing Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="recordDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Irrigation Method
+                    </label>
+
+                    <select id="recordIrrigation">
+
+                        <option value="">
+                            Select method
+                        </option>
+
+                        <option value="Drip Irrigation">
+                            Drip Irrigation
+                        </option>
+
+                        <option value="Sprinkler">
+                            Sprinkler
+                        </option>
+
+                        <option value="Flood Irrigation">
+                            Flood Irrigation
+                        </option>
+
+                        <option value="Rainfed">
+                            Rainfed
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Notes
+                    </label>
+
+                    <textarea
+                        id="recordNotes"
+                        placeholder="Add any additional information..."
+                        rows="4"
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="save-record-btn"
+                >
+
+                    💾 Save Farm Record
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- SAVED RECORDS -->
+
+        <div class="saved-records-card">
+
+            <div class="record-heading">
+
+                <span>📚</span>
+
+                <div>
+
+                    <h3>Saved Records</h3>
+
+                    <p>
+                        Your recent farm activities
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="recordsList"
+                class="records-list"
+            >
+
+                <!-- Records appear here -->
+
+                <div class="empty-records">
+
+                    🌱
+
+                    <h3>
+                        No farm records yet
+                    </h3>
+
+                    <p>
+                        Add your first farm record
+                        using the form.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PEST MONITORING ================= -->
+
+<section class="pest-section" id="pests">
+
+    <div class="section-title">
+
+        <p>CROP PROTECTION</p>
+
+        <h2>🐛 Pest Monitoring</h2>
+
+        <span>
+            Record and monitor pest or disease observations
+            across your farm.
+        </span>
+
+    </div>
+
+
+    <div class="pest-dashboard">
+
+        <!-- SUMMARY CARDS -->
+
+        <div class="pest-summary">
+
+            <div class="pest-stat">
+
+                <span>🐛</span>
+
+                <div>
+                    <small>Active Cases</small>
+                    <strong id="activePests">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="pest-stat">
+
+                <span>⚠️</span>
+
+                <div>
+                    <small>High Severity</small>
+                    <strong id="highPests">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="pest-stat">
+
+                <span>🌾</span>
+
+                <div>
+                    <small>Affected Crops</small>
+                    <strong id="affectedCrops">0</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD OBSERVATION -->
+
+        <div class="pest-form-card">
+
+            <div class="record-heading">
+
+                <span>🔎</span>
+
+                <div>
+
+                    <h3>Report Pest / Disease</h3>
+
+                    <p>
+                        Add a new field observation
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="pestForm">
+
+                <div class="pest-form-grid">
+
+                    <div class="record-input">
+
+                        <label>
+                            Crop
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pestCrop"
+                            placeholder="Example: Rice"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="record-input">
+
+                        <label>
+                            Pest / Disease
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pestName"
+                            placeholder="Example: Brown Plant Hopper"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="record-input">
+
+                        <label>
+                            Severity
+                        </label>
+
+                        <select id="pestSeverity">
+
+                            <option value="">
+                                Select severity
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="record-input">
+
+                        <label>
+                            Affected Area
+                        </label>
+
+                        <input
+                            type="number"
+                            id="pestArea"
+                            placeholder="Acres"
+                            step="0.1"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Observation / Notes
+                    </label>
+
+                    <textarea
+                        id="pestNotes"
+                        rows="3"
+                        placeholder="Describe what you observed..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="save-record-btn"
+                >
+
+                    🐛 Add Observation
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- MONITORING TABLE -->
+
+        <div class="pest-list-card">
+
+            <div class="record-heading">
+
+                <span>📊</span>
+
+                <div>
+
+                    <h3>Monitoring Records</h3>
+
+                    <p>
+                        Recent pest and disease observations
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="pestList"
+                class="pest-list"
+            >
+
+                <div class="empty-records">
+
+                    🌿
+
+                    <h3>
+                        No pest observations
+                    </h3>
+
+                    <p>
+                        Add an observation to begin monitoring.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CROP YIELD ANALYTICS ================= -->
+
+<section class="pest-section" id="pests">
+
+    <div class="section-title">
+
+        <p>FARM PERFORMANCE</p>
+
+        <h2>📊 Crop Yield Analytics</h2>
+
+        <span>
+            Analyze crop production and compare
+            farming performance.
+        </span>
+
+    </div>
+
+
+    <!-- SUMMARY CARDS -->
+
+    <div class="yield-summary">
+
+        <div class="yield-stat">
+
+            <div class="yield-stat-icon">
+                🌾
+            </div>
+
+            <div>
+
+                <small>Total Production</small>
+
+                <strong id="totalProduction">
+                    0
+                </strong>
+
+                <span> tonnes</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="yield-stat">
+
+            <div class="yield-stat-icon">
+                📈
+            </div>
+
+            <div>
+
+                <small>Average Yield</small>
+
+                <strong id="averageYield">
+                    0
+                </strong>
+
+                <span> t/ha</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="yield-stat">
+
+            <div class="yield-stat-icon">
+                🏆
+            </div>
+
+            <div>
+
+                <small>Best Performing Crop</small>
+
+                <strong id="bestCrop">
+                    -
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHARTS -->
+
+    <div class="yield-charts">
+
+        <div class="chart-card">
+
+            <div class="chart-heading">
+
+                <h3>
+                    📊 Crop-wise Yield
+                </h3>
+
+                <p>
+                    Compare yield between crops
+                </p>
+
+            </div>
+
+            <canvas id="cropYieldChart"></canvas>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <div class="chart-heading">
+
+                <h3>
+                    📈 Production Trend
+                </h3>
+
+                <p>
+                    Seasonal production overview
+                </p>
+
+            </div>
+
+            <canvas id="productionTrendChart"></canvas>
+
+        </div>
+
+    </div>
+
+
+    <!-- ADD YIELD RECORD -->
+
+    <div class="yield-form-card">
+
+        <div class="record-heading">
+
+            <span>🌾</span>
+
+            <div>
+
+                <h3>Add Yield Record</h3>
+
+                <p>
+                    Record your crop production
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="yieldForm">
+
+            <div class="yield-form-grid">
+
+                <div class="record-input">
+
+                    <label>
+                        Crop
+                    </label>
+
+                    <input
+                        type="text"
+                        id="yieldCrop"
+                        placeholder="Example: Rice"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Season
+                    </label>
+
+                    <select id="yieldSeason">
+
+                        <option value="">
+                            Select season
+                        </option>
+
+                        <option value="Kharif">
+                            Kharif
+                        </option>
+
+                        <option value="Rabi">
+                            Rabi
+                        </option>
+
+                        <option value="Zaid">
+                            Zaid
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Area Cultivated (hectares)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="yieldArea"
+                        placeholder="Example: 2"
+                        step="0.1"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        Production (tonnes)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="yieldProduction"
+                        placeholder="Example: 5"
+                        step="0.1"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="save-record-btn"
+            >
+
+                📊 Add Yield Record
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- YIELD RECORD LIST -->
+
+    <div class="yield-record-card">
+
+        <div class="record-heading">
+
+            <span>📋</span>
+
+            <div>
+
+                <h3>
+                    Yield Records
+                </h3>
+
+                <p>
+                    Your production history
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="yieldRecordsList"
+            class="yield-records-list"
+        ></div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     PROFIT CALCULATOR
+========================================== -->
+
+<section class="section" id="profitCalculator">
+
+    <div class="section-title">
+
+        <p>FARM ECONOMICS</p>
+
+        <h2>💰 Profit Calculator</h2>
+
+        <span>
+            Estimate your farm income, expenses and expected profit.
+        </span>
+
+    </div>
+
+
+    <div class="profit-container">
+
+        <!-- INPUT CARD -->
+
+        <div class="profit-card">
+
+            <div class="record-heading">
+
+                <span>🧾</span>
+
+                <div>
+                    <h3>Enter Your Costs</h3>
+
+                    <p>
+                        Enter approximate values for one acre.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="profit-form-grid">
+
+                <div class="record-input">
+                    
+
+    <label>
+        📐 Farm Area (acres)
+    </label>
+
+    <input
+        type="number"
+        id="profitArea"
+        placeholder="Example: 5"
+        min="0.1"
+        step="0.1"
+    >
+
+</div>
+            
+    <div class="record-input">
+
+
+                    <label>
+                        🌱 Seed Cost (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitSeed"
+                        placeholder="Example: 2400"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        🧪 Fertilizer Cost (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitFertilizer"
+                        placeholder="Example: 3200"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        👨‍🌾 Labour Cost (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitLabour"
+                        placeholder="Example: 6000"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        💧 Irrigation Cost (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitIrrigation"
+                        placeholder="Example: 1800"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        🚚 Transport Cost (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitTransport"
+                        placeholder="Example: 900"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        🌾 Expected Yield (quintal/acre)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitYield"
+                        placeholder="Example: 8.5"
+                        min="0"
+                        step="0.1"
+                    >
+
+                </div>
+
+
+                <div class="record-input">
+
+                    <label>
+                        💵 Expected Price (₹/quintal)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="profitPrice"
+                        placeholder="Example: 7180"
+                        min="0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="save-record-btn"
+                onclick="calculateProfit()"
+            >
+
+                💰 Calculate Profit
+
+            </button>
+
+        </div>
+
+
+        <!-- RESULT CARD -->
+
+        <div class="profit-result-card">
+
+            <div class="record-heading">
+
+                <span>📊</span>
+
+                <div>
+
+                    <h3>Estimate</h3>
+
+                    <p>
+                        Your estimated farm economics
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="profit-result">
+
+                <div class="profit-result-item">
+
+                    <small>
+                        Expected Income
+                    </small>
+
+                    <strong id="expectedIncome">
+                        ₹0
+                    </strong>
+
+                </div>
+
+            <div class="profit-result-item">
+
+    <small>
+        Total Farm Income
+    </small>
+
+    <strong id="totalIncome">
+        ₹0
+    </strong>
+
+</div>
+
+<div class="profit-result-item">
+
+    <small>
+        Total Farm Expenses
+    </small>
+
+    <strong id="totalFarmExpenses">
+        ₹0
+    </strong>
+
+</div>
+
+
+                <div class="profit-result-item">
+
+                    <small>
+                        Total Expenses
+                    </small>
+
+                    <strong id="totalExpenses">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="profit-result-item">
+
+                    <small>
+                        Estimated Profit
+                    </small>
+
+                    <strong id="estimatedProfit">
+                        ₹0
+                    </strong>
+
+                </div>
+            
+                <div class="profit-result-item">
+
+    <small>
+        Total Farm Profit
+    </small>
+
+    <strong id="totalFarmProfit">
+        ₹0
+    </strong>
+
+</div>
+
+                <div class="profit-result-item">
+
+                    <small>
+                        Profit per Acre
+                    </small>
+
+                    <strong id="profitPerAcre">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div
+                    class="profit-margin"
+                    id="profitMargin"
+                >
+                    Enter values to calculate
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     CROP LIFECYCLE
+========================================== -->
+
+<section class="section" id="cropLifecycle">
+
+    <div class="section-title">
+        <p>SMART CROP JOURNEY</p>
+
+        <h2>🌱 Crop Lifecycle</h2>
+
+        <span>
+            Watch your crop journey from sowing to harvest.
+        </span>
+    </div>
+
+
+    <div class="lifecycle-container">
+
+        <!-- HEADER -->
+
+        <div class="lifecycle-header">
+
+            <div>
+                <span>🌾</span>
+
+                <div>
+                    <h3>Watch It Grow</h3>
+
+                    <p>
+                        Follow the crop's growth journey.
+                    </p>
+                </div>
+            </div>
+
+
+            <select id="lifecycleCrop">
+
+                <option value="cotton">Cotton</option>
+                <option value="rice">Rice</option>
+                <option value="wheat">Wheat</option>
+                <option value="maize">Maize</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- CURRENT STAGE -->
+
+        <div class="lifecycle-info">
+
+            <div class="plant-visual">
+
+                <div
+                    class="growth-stage"
+                    id="growthStage"
+                >
+                    🌱
+                </div>
+
+                <div class="growth-ground"></div>
+
+            </div>
+
+
+            <div class="stage-details">
+
+                <span
+                    class="stage-badge"
+                    id="stageBadge"
+                >
+                    Day 0
+                </span>
+
+
+                <h3 id="stageTitle">
+                    Seed Stage
+                </h3>
+
+
+                <div class="stage-row">
+
+                    <span>💧 Water requirement</span>
+
+                    <strong id="stageWater">
+                        Minimal
+                    </strong>
+
+                </div>
+
+
+                <div class="stage-row">
+
+                    <span>🧪 Nutrient requirement</span>
+
+                    <strong id="stageNutrients">
+                        Low
+                    </strong>
+
+                </div>
+
+
+                <div class="stage-row">
+
+                    <span>🌡️ Temperature</span>
+
+                    <strong id="stageTemperature">
+                        25–30°C
+                    </strong>
+
+                </div>
+
+
+                <div class="stage-row">
+
+                    <span>⚠️ Common risk</span>
+
+                    <strong id="stageRisk">
+                        Poor seed viability
+                    </strong>
+
+                </div>
+
+
+                <div
+                    class="farmer-tip"
+                    id="farmerTip"
+                >
+                    🌱
+                    <strong>Farmer tip:</strong>
+                    Use healthy seed for a strong start.
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- AUTOMATION CONTROLS -->
+
+        <div class="lifecycle-controls">
+
+            <button
+                type="button"
+                id="lifecyclePlay"
+                onclick="toggleLifecycle()"
+            >
+                ▶ Play Journey
+            </button>
+
+
+            <button
+                type="button"
+                onclick="resetLifecycle()"
+                class="lifecycle-reset"
+            >
+                ↺ Reset
+            </button>
+
+        </div>
+
+
+        <!-- PROGRESS BAR -->
+
+        <div class="lifecycle-progress-area">
+
+            <div class="lifecycle-progress">
+
+                <div
+                    class="lifecycle-progress-fill"
+                    id="lifecycleProgressFill"
+                ></div>
+
+
+                <div
+                    class="lifecycle-marker"
+                    id="lifecycleMarker"
+                ></div>
+
+            </div>
+
+
+            <div
+                class="lifecycle-days"
+                id="lifecycleDays"
+            ></div>
+
+        </div>
+
+
+        <!-- CURRENT DAY -->
+
+        <div class="lifecycle-current-day">
+
+            <span>
+                🌱 Current crop age
+            </span>
+
+            <strong id="currentCropDay">
+                Day 0
+            </strong>
+
+        </div>
+
+
+        <!-- MANUAL SLIDER -->
+
+        <div class="lifecycle-slider-area">
+
+            <input
+                type="range"
+                id="lifecycleSlider"
+                min="0"
+                max="150"
+                value="0"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     MARKET INTELLIGENCE
+========================================== -->
+
+<section class="market-section" id="market">
+
+    <div class="section-title">
+
+        <p>SMART MARKET INSIGHTS</p>
+
+        <h2>📈 Market Intelligence</h2>
+
+        <span>
+            Explore indicative crop prices, demand trends
+            and market insights to support better decisions.
+        </span>
+
+    </div>
+
+
+    <div class="market-dashboard">
+
+        <!-- MARKET CONTROLS -->
+
+        <div class="market-controls">
+
+            <div class="market-input">
+
+                <label for="marketCrop">
+                    🌾 Select Crop
+                </label>
+
+                <select id="marketCrop">
+
+                    <option value="rice">
+                        Rice
+                    </option>
+
+                    <option value="wheat">
+                        Wheat
+                    </option>
+
+                    <option value="maize">
+                        Maize
+                    </option>
+
+                    <option value="cotton">
+                        Cotton
+                    </option>
+
+                    <option value="groundnut">
+                        Groundnut
+                    </option>
+
+                    <option value="millets">
+                        Millets
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="market-input">
+
+                <label for="marketLocation">
+                    📍 Market / Location
+                </label>
+
+                <select id="marketLocation">
+
+                    <option value="local">
+                        Local Market
+                    </option>
+
+                    <option value="mandi">
+                        Nearby Mandi
+                    </option>
+
+                    <option value="regional">
+                        Regional Market
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRICE CARDS -->
+
+        <div class="market-cards">
+
+            <div class="market-card">
+
+                <div class="market-card-icon">
+                    💰
+                </div>
+
+                <div>
+
+                    <small>
+                        Indicative Price
+                    </small>
+
+                    <h3 id="marketPrice">
+                        ₹2,350
+                    </h3>
+
+                    <span>
+                        per quintal
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="market-card-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <small>
+                        Price Trend
+                    </small>
+
+                    <h3
+                        id="marketTrend"
+                        class="trend-up"
+                    >
+                        ↑ Rising
+                    </h3>
+
+                    <span id="marketChange">
+                        +4.2%
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="market-card">
+
+                <div class="market-card-icon">
+                    🌾
+                </div>
+
+                <div>
+
+                    <small>
+                        Demand
+                    </small>
+
+                    <h3 id="marketDemand">
+                        High
+                    </h3>
+
+                    <span>
+                        Current indicator
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHART -->
+
+        <div class="market-chart-card">
+
+            <div class="market-chart-header">
+
+                <div>
+
+                    <h3>
+                        📈 Indicative Price Trend
+                    </h3>
+
+                    <p>
+                        Recent reference trend
+                    </p>
+
+                </div>
+
+                <span class="market-badge">
+                    Demo Data
+                </span>
+
+            </div>
+
+
+            <div class="market-chart">
+
+                <div class="chart-y-axis">
+
+                    <span>₹3,000</span>
+                    <span>₹2,500</span>
+                    <span>₹2,000</span>
+                    <span>₹1,500</span>
+
+                </div>
+
+
+                <div class="chart-area">
+
+                    <svg
+                        viewBox="0 0 600 250"
+                        preserveAspectRatio="none"
+                        class="price-chart"
+                    >
+
+                        <polyline
+                            id="marketChartLine"
+                            points="
+                                0,180
+                                100,155
+                                200,165
+                                300,125
+                                400,140
+                                500,95
+                                600,70
+                            "
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+
+                    </svg>
+
+
+                    <div class="chart-x-axis">
+
+                        <span>Week 1</span>
+                        <span>Week 2</span>
+                        <span>Week 3</span>
+                        <span>Week 4</span>
+                        <span>Week 5</span>
+                        <span>Week 6</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MARKET INSIGHT -->
+
+        <div class="market-insight">
+
+            <div class="market-insight-icon">
+                💡
+            </div>
+
+            <div>
+
+                <span>
+                    MARKET INSIGHT
+                </span>
+
+                <h3 id="marketAdvice">
+                    Demand is currently strong.
+                </h3>
+
+                <p id="marketAdviceText">
+
+                    Monitor local prices and compare
+                    multiple markets before making a
+                    selling decision.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="market-note">
+
+            ⚠️
+            <span>
+                Prices shown here are
+                <strong>indicative demonstration data</strong>.
+                Actual market prices may vary by location,
+                quality, date and market conditions.
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     FARMER BENEFITS
+========================================= -->
+
+<div class="benefits-header">
+
+    <span class="section-badge">
+        🏛️ GOVERNMENT SUPPORT
+    </span>
+
+    <h2>
+        Farmer Benefits & Government Schemes
+    </h2>
+
+    <p>
+        Discover government schemes and agricultural support programs
+        that may help farmers with income support, crop insurance,
+        credit and other farming needs.
+    </p>
+
+</div>
+
+
+
+
+<!-- =========================================
+     SCHEME CARDS
+========================================= -->
+
+<div class="scheme-grid" id="schemeGrid">
+
+
+    <!-- PM KISAN -->
+
+    <div
+        class="scheme-card"
+        data-name="pm kisan samman nidhi income support farmer">
+
+        <div class="scheme-icon income-icon">
+            💰
+        </div>
+
+        <span class="scheme-category">
+            Income Support
+        </span>
+
+        <h3>
+            PM-KISAN Samman Nidhi
+        </h3>
+
+        <p>
+            An income-support scheme for eligible landholding
+            farmer families.
+        </p>
+
+        <div class="scheme-info">
+
+            <div>
+                <strong>Benefit</strong>
+                <span>₹6,000/year*</span>
+            </div>
+
+            <div>
+                <strong>Generally for</strong>
+                <span>Eligible farmer families</span>
+            </div>
+
+        </div>
+
+        <div class="scheme-note">
+            *Subject to official scheme guidelines and exclusions.
+        </div>
+
+        <a
+            href="https://www.pmkisan.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="scheme-btn">
+            Learn More →
+        </a>
+
+    </div>
+
+
+    <!-- PMFBY -->
+
+    <div
+        class="scheme-card"
+        data-name="pradhan mantri fasal bima yojana pmfby crop insurance">
+
+        <div class="scheme-icon insurance-icon">
+            🛡️
+        </div>
+
+        <span class="scheme-category">
+            Crop Insurance
+        </span>
+
+        <h3>
+            Pradhan Mantri Fasal Bima Yojana
+        </h3>
+
+        <p>
+            Crop insurance support designed to help protect farmers
+            against eligible crop losses.
+        </p>
+
+        <div class="scheme-info">
+
+            <div>
+                <strong>Benefit</strong>
+                <span>Crop insurance</span>
+            </div>
+
+            <div>
+                <strong>Generally for</strong>
+                <span>Farmers covered under notified crops/areas</span>
+            </div>
+
+        </div>
+
+        <div class="scheme-note">
+            Coverage, crops, areas and conditions depend on official
+            notifications and guidelines.
+        </div>
+
+        <a
+            href="https://pmfby.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="scheme-btn">
+            Learn More →
+        </a>
+
+    </div>
+
+
+    <!-- KISAN CREDIT CARD -->
+
+    <div
+        class="scheme-card"
+        data-name="kisan credit card kcc agricultural credit">
+
+        <div class="scheme-icon credit-icon">
+            🏦
+        </div>
+
+        <span class="scheme-category">
+            Agricultural Credit
+        </span>
+
+        <h3>
+            Kisan Credit Card
+        </h3>
+
+        <p>
+            A credit facility designed to help eligible farmers
+            meet agricultural and related financial needs.
+        </p>
+
+        <div class="scheme-info">
+
+            <div>
+                <strong>Benefit</strong>
+                <span>Access to agricultural credit*</span>
+            </div>
+
+            <div>
+                <strong>Generally for</strong>
+                <span>Eligible farmers</span>
+            </div>
+
+        </div>
+
+        <div class="scheme-note">
+            Availability, limits and terms depend on applicable
+            banking and government guidelines.
+        </div>
+
+        <a
+            href="https://www.pmkisan.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="scheme-btn">
+            Learn More →
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     IMPORTANT NOTICE
+========================================= -->
+
+<div class="scheme-disclaimer">
+
+    <div class="disclaimer-icon">
+        ℹ️
+    </div>
+
+    <div>
+
+        <strong>
+            Important
+        </strong>
+
+        <p>
+            Scheme benefits, eligibility, deadlines and application
+            requirements can change. Kisan Mithra provides general
+            information only. Always verify the latest details through
+            the official government source before applying.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= IoT SENSOR DASHBOARD ================= -->
+
+<section class="iot-section" id="iot">
+
+    
+    <div class="section-title">
+
+        <p>SMART FARM TECHNOLOGY</p>
+
+        <h2>📡 IoT Sensor Dashboard</h2>
+
+        <span>
+            Monitor important farm conditions
+            using connected smart sensors.
+        </span>
+
+    </div>
+
+
+    <!-- CONNECTION STATUS -->
+
+    <div class="iot-status">
+
+        <span class="status-dot"></span>
+
+        <strong>
+            Sensors Online
+        </strong>
+
+        <span id="sensorUpdateTime">
+            Updating...
+        </span>
+
+    </div>
+
+
+    <!-- SENSOR CARDS -->
+
+    <div class="sensor-grid">
+
+        <!-- SOIL MOISTURE -->
+
+        <div class="sensor-card">
+
+            <div class="sensor-icon">
+                💧
+            </div>
+
+            <div class="sensor-info">
+
+                <span>
+                    Soil Moisture
+                </span>
+
+                <strong id="soilMoisture">
+                    64%
+                </strong>
+
+                <small id="moistureStatus">
+                    Optimal
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- TEMPERATURE -->
+
+        <div class="sensor-card">
+
+            <div class="sensor-icon">
+                🌡️
+            </div>
+
+            <div class="sensor-info">
+
+                <span>
+                    Temperature
+                </span>
+
+                <strong id="sensorTemp">
+                    29°C
+                </strong>
+
+                <small>
+                    Farm temperature
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- HUMIDITY -->
+
+        <div class="sensor-card">
+
+            <div class="sensor-icon">
+                💦
+            </div>
+
+            <div class="sensor-info">
+
+                <span>
+                    Air Humidity
+                </span>
+
+                <strong id="sensorHumidity">
+                    68%
+                </strong>
+
+                <small>
+                    Atmospheric humidity
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOIL PH -->
+
+        <div class="sensor-card">
+
+            <div class="sensor-icon">
+                🌱
+            </div>
+
+            <div class="sensor-info">
+
+                <span>
+                    Soil pH
+                </span>
+
+                <strong id="sensorPH">
+                    6.5
+                </strong>
+
+                <small>
+                    Soil acidity level
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- LIGHT -->
+
+        <div class="sensor-card">
+
+            <div class="sensor-icon">
+                ☀️
+            </div>
+
+            <div class="sensor-info">
+
+                <span>
+                    Light Intensity
+                </span>
+
+                <strong id="lightIntensity">
+                    72%
+                </strong>
+
+                <small>
+                    Available sunlight
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- WATER LEVEL -->
+
+        <div class="sensor-card">
+
+            <div class="sensor-icon">
+                🚰
+            </div>
+
+            <div class="sensor-info">
+
+                <span>
+                    Water Level
+                </span>
+
+                <strong id="waterLevel">
+                    78%
+                </strong>
+
+                <small id="waterStatus">
+                    Sufficient
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SENSOR GRAPH -->
+
+    <div class="sensor-chart-card">
+
+        <div class="chart-heading">
+
+            <h3>
+                📈 Live Soil Moisture
+            </h3>
+
+            <p>
+                Sensor readings over time
+            </p>
+
+        </div>
+
+
+        <canvas id="sensorChart"></canvas>
+
+    </div>
+
+
+    <!-- FARM ALERT -->
+
+    <div
+        class="farm-alert"
+        id="farmAlert"
+    >
+
+        <span>
+            🌱
+        </span>
+
+        <div>
+
+            <strong>
+                Farm Status
+            </strong>
+
+            <p id="farmAlertText">
+                Your farm conditions are currently
+                within the normal range.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div
+    class="farm-alert"
+    id="farmAlert"
+>
+    ...
+</div>
+
+    
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div>
+
+            <p class="section-label">
+                ABOUT KISAN MITHRA
+            </p>
+
+            <h2>
+                Technology Meets Agriculture
+            </h2>
+
+            <p>
+                Kisan Mithra is a smart agriculture platform
+                designed to help farmers make better decisions
+                using weather information, soil analysis,
+                crop recommendations and modern technology.
+            </p>
+
+        </div>
+
+
+    </section>
+
+    <!-- ================= LOGIN / REGISTER MODAL ================= -->
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="auth-modal">
+
+        <button class="close-modal" id="closeModal">
+            ×
+        </button>
+
+
+        <!-- LOGIN -->
+
+        <div class="auth-form" id="loginForm">
+
+            <div class="auth-icon">
+                🌾
+            </div>
+
+            <h2 id="loginTitle">
+                Farmer Login
+            </h2>
+
+            <p>
+                Welcome back to Kisan Mithra
+            </p>
+
+
+            <form id="loginFormElement">
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="remember-row">
+
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <p class="switch-auth">
+
+                Don't have an account?
+
+                <button id="showRegister">
+                    Register
+                </button>
+
+            </p>
+
+        </div>
+
+
+
+        <!-- REGISTER -->
+
+        <div class="auth-form hidden" id="registerForm">
+
+            <div class="auth-icon">
+                🌱
+            </div>
+
+            <h2>
+                Create Account
+            </h2>
+
+            <p>
+                Join Kisan Mithra today
+            </p>
+
+
+            <form id="registerFormElement">
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        placeholder="Enter phone number"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-submit"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p class="switch-auth">
+
+                Already have an account?
+
+                <button id="showLogin">
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div>
+
+            <h2>
+                🌾 Kisan Mithra
+            </h2>
+
+            <p>
+                Smart technology for smarter farming.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#weather">Weather</a>
+            <a href="#soil">Soil</a>
+            <a href="#crops">Crops</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Kisan Mithra. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+
+<!-- ============================= -->
+<!-- KISAN MITHRA AI CHATBOT -->
+<!-- ============================= -->
+
+<div class="chatbot-container">
+
+    <button class="chatbot-button" id="chatbotButton">
+        🤖
+    </button>
+
+    <div class="chatbot-box" id="chatbotBox">
+
+        <div class="chatbot-header">
+            <div>
+                <h3>🌾 Kisan Mithra</h3>
+                <span>AI Farming Assistant</span>
+            </div>
+
+            <button id="closeChatbot">×</button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbotMessages">
+
+            <div class="bot-message">
+                <strong>Kisan Mithra 🌾</strong>
+                <p>
+                    Hello! I'm Kisan Mithra. 👋
+                    Ask me anything about crops, soil,
+                    irrigation, pests, farming or agriculture.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="chatbot-input-area">
+
+            <input
+                type="text"
+                id="chatbotInput"
+                placeholder="Ask your farming question..."
+                autocomplete="off"
+            >
+
+            <button id="chatbotSend">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Chatbot JavaScript -->
+<script src="js/chatbot.js"></script>/
+<script src="script.js"></script>
+
+<!-- GOOGLE TRANSLATE -->
+
+<div id="google_translate_element"></div>
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: "en",
+            includedLanguages: "en,te,hi,kn,ta",
+            autoDisplay: false
+        },
+        "google_translate_element"
+    );
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

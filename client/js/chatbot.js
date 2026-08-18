@@ -112,7 +112,7 @@ async function sendChatMessage() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/chat",
+    "https://nikitha2153.app.n8n.cloud/webhook/kissanmithra-chatbot",
             {
                 method: "POST",
 
@@ -121,15 +121,27 @@ async function sendChatMessage() {
                         "application/json"
                 },
 
-                body: JSON.stringify({
-                    message: message
-                })
+               body: JSON.stringify({
+    userMessage: message,
+    language: "en"
+})
             }
         );
 
 
-        const data =
-            await response.json();
+       const responseText = await response.text();
+
+console.log("n8n Response:", responseText);
+
+let data;
+
+try {
+    data = JSON.parse(responseText);
+} catch (error) {
+    throw new Error(
+        "n8n returned an invalid or empty response: " + responseText
+    );
+}
 
 
         // Remove loading

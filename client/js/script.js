@@ -93,7 +93,6 @@ registerBtn.addEventListener("click", function () {
 });
 
 
-
 /* CLOSE */
 
 closeModal.addEventListener("click", function () {

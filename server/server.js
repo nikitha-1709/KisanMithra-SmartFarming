@@ -1,46 +1,64 @@
+const dns = require("dns");
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 require("dotenv").config();
 
 const { GoogleGenAI } = require("@google/genai");
-
+const User = require("./models/User");
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 
-/* ==========================================
-   OPENAI
-========================================== */
+// ==========================================
+// GEMINI AI
+// ==========================================
 
 const client = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY
 });
 
 
-/* ==========================================
-   MIDDLEWARE
-========================================== */
+// ==========================================
+// MIDDLEWARE
+// ==========================================
 
 app.use(cors());
 app.use(express.json());
 
 
-/* ==========================================
-   TEST ROUTE
-========================================== */
+// ==========================================
+// MONGODB CONNECTION
+// ==========================================
+
+mongoose
+    .connect(process.env.MONGO_URI)
+    .then(() => {
+        console.log("✅ MongoDB Connected Successfully");
+    })
+    .catch((error) => {
+        console.error("❌ MongoDB Connection Failed");
+        console.error(error.message);
+    });
+
+
+// ==========================================
+// TEST ROUTE
+// ==========================================
 
 app.get("/", (req, res) => {
-
     res.json({
         message: "Kisan Mithra server is running 🌾"
     });
-
 });
 
 
-/* ==========================================
-   AI CHAT ROUTE
-========================================== */
+// ==========================================
+// AI CHAT ROUTE
+// ==========================================
 
 app.post("/api/chat", async (req, res) => {
 
@@ -109,9 +127,61 @@ ${userMessage}
     }
 
 });
-/* ==========================================
-   START SERVER
-========================================== */
+
+app.post("/api/register", async (req, res) => {
+
+    try {
+
+        const { name, email, password } = req.body;
+
+        if (!name || !email || !password) {
+            return res.status(400).json({
+                error: "All fields are required."
+            });
+        }
+
+        const existingUser = await User.findOne({
+            email: email.toLowerCase()
+        });
+
+        if (existingUser) {
+            return res.status(400).json({
+                error: "User already exists."
+            });
+        }
+
+        const bcrypt = require("bcryptjs");
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        const user = new User({
+            name,
+            email: email.toLowerCase(),
+            password: hashedPassword
+        });
+
+        await user.save();
+
+        res.status(201).json({
+            message: "Registration successful!"
+        });
+
+    } catch (error) {
+
+        console.error("Registration Error:", error);
+
+        res.status(500).json({
+            error: "Registration failed."
+        });
+
+    }
+
+});
+
+// ==========================================
+// START SERVER
+// ==========================================
+
 
 app.listen(PORT, () => {
 

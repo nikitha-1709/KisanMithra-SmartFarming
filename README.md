@@ -57,6 +57,34 @@ Farmers often have to depend on different sources for information about crops, s
 
 ---
 
+📂 Project Structure
+Kisan-Mithra/
+│
+├── index.html
+│
+├── css/
+│   ├── style.css
+│   └── responsive.css
+│
+├── js/
+│   ├── script.js
+│   ├── weather.js
+│   └── chatbot.js
+│
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── data/
+│   └── agricultural-datasets/
+│
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   └── models/
+│
+└── README.md
+
 ## 🌾 Project
 
 Kisan Mithra was developed as part of the **MANTRA Eco Hack** project with the idea of using technology to create practical solutions for modern farming.

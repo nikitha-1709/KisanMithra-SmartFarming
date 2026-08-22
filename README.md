@@ -57,6 +57,36 @@ Farmers often have to depend on different sources for information about crops, s
 
 ---
 
+🏗️ System Architecture
+                 ┌─────────────────────┐
+                 │       Farmer        │
+                 └──────────┬──────────┘
+                            │
+                            ▼
+                 ┌─────────────────────┐
+                 │    Kisan Mithra     │
+                 │   Web Application   │
+                 └──────────┬──────────┘
+                            │
+        ┌───────────────────┼───────────────────┐
+        │                   │                   │
+        ▼                   ▼                   ▼
+┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│ Smart Tools  │    │ AI Assistant │    │ Information  │
+│              │    │              │    │   Services   │
+├──────────────┤    ├──────────────┤    ├──────────────┤
+│ Crop Advice  │    │ AI Chatbot   │    │ Govt Schemes │
+│ Soil Analysis│    │              │    │ Learning Hub │
+│ Profit Calc. │    │              │    │ Market Info  │
+│ Plant Doctor │    │              │    │ Weather      │
+└──────────────┘    └──────────────┘    └──────────────┘
+        │                   │                   │
+        └───────────────────┼───────────────────┘
+                            ▼
+                 ┌─────────────────────┐
+                 │ Analytics & Reports │
+                 └─────────────────────┘
+
 📂 Project Structure
 Kisan-Mithra/
 │

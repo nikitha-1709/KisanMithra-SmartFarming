@@ -20,7 +20,6 @@ It brings useful farming tools, agricultural information, and analytics together
 * 📊 **Crop & Yield Analytics** – Shows agricultural data through simple visualizations.
 * 🌱 **Crop Lifecycle** – Helps track different stages of crop growth.
 * 🏛️ **Government Schemes** – Helps farmers find useful government schemes.
-* 📚 **Learning Hub** – Provides agricultural learning resources.
 * 📈 **Market Intelligence** – Provides useful market-related information.
 * 📋 **Farm Records** – Helps organize farm information.
 

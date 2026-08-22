@@ -12,22 +12,6 @@ Kisan Mithra is a **smart agriculture platform** that brings farming tools, usef
 
 ---
 
-✨ Features
-🌱 Crop Recommendation – Suggests suitable crops based on soil conditions.
-🧪 Soil Report Comparison – Helps understand and compare soil data.
-🌦️ Weather Dashboard – Provides useful weather information for farming.
-🤖 AI Farming Assistant – Helps users with agriculture-related questions.
-🐛 Pest Monitoring & Plant Doctor – Provides guidance for pest and plant health issues.
-💰 Profit Calculator – Helps estimate farming costs and profit.
-🌿 Fertilizer Advisor – Provides basic fertilizer recommendations.
-📊 Crop & Yield Analytics – Shows agricultural data through simple visualizations.
-🌱 Crop Lifecycle – Helps track different stages of crop growth.
-🏛️ Government Schemes – Helps farmers find useful government schemes.
-📚 Learning Hub – Provides agricultural learning resources.
-📈 Market Intelligence – Provides useful market-related information.
-📋 Farm Records – Helps organize farm information.
----
-
 ## Why did we build it?
 
 Farmers often have to depend on different websites and sources to find information about crops, weather, soil, pests, markets, and government support.
@@ -37,6 +21,24 @@ Farmers often have to depend on different websites and sources to find informati
 Our goal is simple:
 
 > **Make technology easier for farmers to use and turn information into better farming decisions.**
+
+---
+
+## ✨ Features
+
+* 🌱 **Crop Recommendation** – Suggests suitable crops based on soil conditions.
+* 🧪 **Soil Report Comparison** – Helps understand and compare soil data.
+* 🌦️ **Weather Dashboard** – Provides useful weather information for farming.
+* 🤖 **AI Farming Assistant** – Helps users with agriculture-related questions.
+* 🐛 **Pest Monitoring & Plant Doctor** – Provides guidance for pest and plant health issues.
+* 💰 **Profit Calculator** – Helps estimate farming costs and profit.
+* 🌿 **Fertilizer Advisor** – Provides basic fertilizer recommendations.
+* 📊 **Crop & Yield Analytics** – Shows agricultural data through simple visualizations.
+* 🌱 **Crop Lifecycle** – Helps track different stages of crop growth.
+* 🏛️ **Government Schemes** – Helps farmers find useful government schemes.
+* 📚 **Learning Hub** – Provides agricultural learning resources.
+* 📈 **Market Intelligence** – Provides useful market-related information.
+* 📋 **Farm Records** – Helps organize farm information.
 
 ---
 

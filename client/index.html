@@ -250,223 +250,6 @@
 
 <section class="km-dashboard" id="dashboard">
 
-    <!-- ================= SIDEBAR ================= -->
-
-    <aside class="km-sidebar">
-
-        <!-- BRAND -->
-
-        <div class="km-sidebar-brand">
-
-            <div class="km-brand-icon">
-                🌾
-            </div>
-
-            <div>
-                <h2>Kisan Mithra</h2>
-                <small>Smart Farming</small>
-            </div>
-
-        </div>
-
-
-        <!-- OVERVIEW -->
-
-        <div class="km-menu-label">
-            OVERVIEW
-        </div>
-
-
-        <a
-            href="#dashboard"
-            class="km-menu-item active"
-        >
-
-            <span class="km-menu-icon">🏠</span>
-
-            <div>
-                <strong>Dashboard</strong>
-                <small>Farm overview</small>
-            </div>
-
-        </a>
-
-
-        <!-- FARM INTELLIGENCE -->
-
-        <div class="km-menu-label">
-            FARM INTELLIGENCE
-        </div>
-
-
-        <a href="#weather" class="km-menu-item">
-
-            <span class="km-menu-icon">🌦️</span>
-
-            <div>
-                <strong>Weather</strong>
-                <small>Weather conditions</small>
-            </div>
-
-        </a>
-
-
-        <a href="#soil" class="km-menu-item">
-
-            <span class="km-menu-icon">🌱</span>
-
-            <div>
-                <strong>Soil Intelligence</strong>
-                <small>Soil health & reports</small>
-            </div>
-
-        </a>
-
-
-        <a href="#recommendation" class="km-menu-item">
-
-            <span class="km-menu-icon">🌾</span>
-
-            <div>
-                <strong>Crop Recommendation</strong>
-                <small>Suitable crops</small>
-            </div>
-
-        </a>
-
-
-        <a href="#fertilizerAdvisor" class="km-menu-item">
-
-            <span class="km-menu-icon">🧪</span>
-
-            <div>
-                <strong>Fertilizer Advisor</strong>
-                <small>Nutrient guidance</small>
-            </div>
-
-        </a>
-
-
-        <a href="#plantDoctor" class="km-menu-item">
-
-            <span class="km-menu-icon">🩺</span>
-
-            <div>
-                <strong>Plant Doctor</strong>
-                <small>Plant health</small>
-            </div>
-
-        </a>
-
-
-        <a href="#pests" class="km-menu-item">
-
-            <span class="km-menu-icon">🐛</span>
-
-            <div>
-                <strong>Pest Monitoring</strong>
-                <small>Pest & disease tracking</small>
-            </div>
-
-        </a>
-
-
-        <a href="#records" class="km-menu-item">
-
-            <span class="km-menu-icon">📒</span>
-
-            <div>
-                <strong>Farm Records</strong>
-                <small>Farm activities</small>
-            </div>
-
-        </a>
-
-
-        <a href="#cropLifecycle" class="km-menu-item">
-
-            <span class="km-menu-icon">🌱</span>
-
-            <div>
-                <strong>Crop Lifecycle</strong>
-                <small>Growth stages</small>
-            </div>
-
-        </a>
-
-
-        <!-- FARM TOOLS -->
-
-        <div class="km-menu-label">
-            FARM TOOLS
-        </div>
-
-
-        <a href="#profitCalculator" class="km-menu-item">
-
-            <span class="km-menu-icon">💰</span>
-
-            <div>
-                <strong>Profit Calculator</strong>
-                <small>Estimate profit</small>
-            </div>
-
-        </a>
-
-
-        <a href="#market" class="km-menu-item">
-
-            <span class="km-menu-icon">📈</span>
-
-            <div>
-                <strong>Market Intelligence</strong>
-                <small>Market information</small>
-            </div>
-
-        </a>
-
-
-        <a href="#iot" class="km-menu-item">
-
-            <span class="km-menu-icon">📡</span>
-
-            <div>
-                <strong>IoT Monitoring</strong>
-                <small>Smart sensors</small>
-            </div>
-
-        </a>
-
-
-        <a href="#analytics" class="km-menu-item">
-
-    <span class="km-menu-icon">📊</span>
-
-    <div>
-        <strong>Analytics</strong>
-        <small>Farm data insights</small>
-    </div>
-
-</a>
-
-
-        <!-- SIDEBAR BOTTOM -->
-
-        <div class="km-sidebar-bottom">
-
-            <div class="km-farmer-avatar">
-                👨‍🌾
-            </div>
-
-            <div>
-                <strong>Farmer</strong>
-                <small>Kisan Mithra</small>
-            </div>
-
-        </div>
-
-    </aside>
-
 
     <!-- ================= MAIN DASHBOARD ================= -->
 
@@ -787,7 +570,7 @@
                             Analyze farm data
                         </small>
 
-
+                    </a>
             </div>
 
         </div>
@@ -4284,11 +4067,14 @@
         </p>
 
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+console.log("Chart.js status:", typeof Chart);
+</script>
     <script src="js/script.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/analytics.js"></script>
+    
 <!-- ============================= -->
 <!-- KISAN MITHRA AI CHATBOT -->
 <!-- ============================= -->
@@ -4344,8 +4130,7 @@
 
 
 <!-- Chatbot JavaScript -->
-<script src="js/chatbot.js"></script>/
-<script src="script.js"></script>
+<script src="js/chatbot.js"></script>
 
 <!-- GOOGLE TRANSLATE -->
 
